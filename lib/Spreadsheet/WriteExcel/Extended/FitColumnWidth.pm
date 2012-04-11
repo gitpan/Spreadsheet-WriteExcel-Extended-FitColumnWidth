@@ -8,7 +8,7 @@ use Font::TTFMetrics;
 
 our $arial;     # Default font
 our $arialbd;   # Default bold font
-our $VERSION = sprintf("%d.%02d", q'$Revision: 1.1 $' =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q'$Revision: 1.2 $' =~ /(\d+)\.(\d+)/);
 
 
 sub new
@@ -249,7 +249,7 @@ sub extended_store_string_widths
     {
         $string_width = string_width_fancy($token, $arialbd);
     }
-    else
+    elsif ($row == 0)
     {
         $string_width *= 1.15;
     }
@@ -538,11 +538,14 @@ The autofit code is also based on the example code that John put together.
 
 =head1 CVS ID
 
- $Id: FitColumnWidth.pm,v 1.1 2012/04/10 10:46:29 Greg Exp $
+ $Id: FitColumnWidth.pm,v 1.2 2012/04/11 11:49:17 Greg Exp $
 
 =head1 CVS LOG
 
  $Log: FitColumnWidth.pm,v $
+ Revision 1.2  2012/04/11 11:49:17  Greg
+ - Minor but annoying correction
+
  Revision 1.1  2012/04/10 10:46:29  Greg
  Initial development
 

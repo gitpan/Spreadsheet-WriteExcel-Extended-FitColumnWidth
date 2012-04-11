@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Spreadsheet-WriteExcel-Extended-FitColumnWidth
-version:            1.01
+version:            1.02
 abstract:           Extends Spreadsheet::WriteExcel with autofit of columns and a few other nice things
 author:
     - Greg George <gng@cpan.org>
